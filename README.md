@@ -1,2 +1,0 @@
-# PowerBI-practicals
-PowerBI practicals
