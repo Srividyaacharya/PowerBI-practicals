@@ -92,5 +92,5 @@ FiscalMonthNumber =
 MOD(MONTH(DateTable[Date]) + 8, 12) + 1
 
 FiscalMonth = FORMAT(DateTable[Date], "MMM")
-
+```
 ![image](https://github.com/user-attachments/assets/3861a774-78b8-4146-b2ee-45efcca9927a)
