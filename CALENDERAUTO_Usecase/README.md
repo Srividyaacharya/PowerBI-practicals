@@ -69,7 +69,7 @@ A custom date table was created using `CALENDARAUTO(3)` to define a fiscal year 
 
 ---
 
-## 📆 Fiscal Year Logic
+## 📆 Fiscal Year 
 
 ```DAX
 FiscalMonthNumber = MOD(MONTH(DateTable[Date]) + 8, 12) + 1
@@ -87,3 +87,10 @@ SWITCH(TRUE(),
     MONTH(DateTable[Date]) IN {10,11,12}, "Q3",
     "Q4"
 )
+
+FiscalMonthNumber = 
+MOD(MONTH(DateTable[Date]) + 8, 12) + 1
+
+FiscalMonth = FORMAT(DateTable[Date], "MMM")
+
+![image](https://github.com/user-attachments/assets/3861a774-78b8-4146-b2ee-45efcca9927a)
